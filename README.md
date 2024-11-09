@@ -11,6 +11,9 @@
 9. `npm install`
 10. `npm run dev`
 
+書き込み権限のエラーが発生する場合は
+`sudo chown -R ユーザー名:ユーザー名 .``sudo chmod -R 777 *`
+
 ## 使用技術(実行環境)
 
 -   **フレームワーク**: Laravel 10.48.21
