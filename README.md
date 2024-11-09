@@ -1,26 +1,25 @@
 ## 環境構築
 
-1. `git clone git@github.com:hiroakiokamura/coachtech-test.git`
-2. `composer install`
-3. `php artisan sail install`
-4. DockerDesktop アプリを立ち上げる
-5. `./vendor/bin/sail up -d`
-6. `./vendor/bin/sail artisan key:generate`
-7. `./vendor/bin/sail artisan migrate`
-8. `./vendor/bin/sail artisan db:seed`
+1. `git clone git@github.com:hiroakiokamura/confirm-test1.git`
+2. DockerDesktopを起動し`docker-compose up -d --build`
+3. `cd src`
+4. `composer install`
+5. `.env.exampleファイルの名前を.envに変更`
+6. `php artisan key:generate`
+7. `docker-compose exec php php artisan migrate`
+8. `docker-compose exec php php artisan db:seed`
 9. `npm install`
 10. `npm run dev`
 
 ## 使用技術(実行環境)
 
--   **フレームワーク**: Laravel 10.48.22
+-   **フレームワーク**: Laravel 10.48.21
 -   **プログラミング言語**: PHP 8.3.12
--   **データベース**: MySQL 8.0.39
--   **その他**: Docker, Docker Compose, Bootstrap 4.5
+-   **データベース**: MySQL 8.0.26
 
 ## ER 図
 
-[ER 図](storage/images/ER.png)
+[ER 図](src/storage/images/ER.png)
 
 ## URL
 
